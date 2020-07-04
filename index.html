@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, user-scalable=no" name="viewport"/>
+    <link href="lib/fomantic-ui/semantic.min.css" rel="stylesheet" type="text/css">
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/fomantic-ui/semantic.min.js"></script>
+    <script src="lib/jquery/jquery.visible.min.js"></script>
+    <script src="lib/jquery/jquery.form.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+    <title>O Projeto Privoce</title>
+</head>
+<body>
+
+<!--回到顶部按钮-->
+<div class="ui large primary circular icon button n-home" id="scroll-to-top-button">
+    <i class="angle up icon"></i>
+</div>
+
+<!--手机版侧边菜单-->
+<div class="ui vertical inverted sidebar menu" id="sidebar-menu">
+
+    <a class="header item n-home" id="side-menu-mobile-header">
+        <h3 class="ui inverted header">O<br>Projeto<br>Privoce</h3>
+    </a>
+    <a class="item n-problem">Problema</a>
+    <a class="item n-mission">Missão</a>
+    <a class="item n-overview">Visão geral</a>
+    <a class="item n-approach">Abordagem</a>
+    <a class="item n-feature">Recursos</a>
+    <a class="item n-team">Equipe</a>
+    <a class="item n-join">Junte-se a nós</a>
+
+</div>
+
+<!--固定的主菜单-->
+<div class="ui large borderless top fixed menu transition hidden main menu">
+    <div class="ui text container">
+        <a class="header item desktop-only n-home">
+            <h3 class="ui header">
+                <i class="user secret icon"></i>
+                <div class="content">Privoce</div>
+            </h3>
+        </a>
+        <a class="item mobile-only sidebar-toggle">
+            <i class="sidebar icon"></i>
+        </a>
+        <div class="header item mobile-only center aligned n-home">
+            <h3 class="ui header">O Projeto Privoce</h3>
+        </div>
+        <a class="item desktop-only n-problem">Problema</a>
+        <a class="item desktop-only n-mission">Missão</a>
+        <a class="item desktop-only n-overview">Visão geral</a>
+        <a class="item desktop-only n-approach">Abordagem</a>
+        <a class="item desktop-only n-feature">Recursos</a>
+        <a class="item desktop-only n-team">Equipe</a>
+        <a class="item desktop-only n-join">Junte-se a nós</a>
+    </div>
+</div>
+
+<!--内容容器-->
+<div class="pusher">
+    <!--向下滚动动画图标-->
+    <div class="scrolling-hint">
+        <i class="inverted big angle double down icon scrolling-hint n-mission"></i>
+    </div>
+
+    <!--主菜单和横幅巨幕-->
+    <div class="ui inverted vertical masthead center aligned segment" id="home">
+        <div class="ui container">
+
+            <!--主菜单-->
+            <div class="ui large secondary inverted pointing menu main menu">
+                <div class="ui text container">
+                    <a class="header item desktop-only n-home">
+                        <h3 class="ui inverted header">
+                            <i class="user secret icon"></i>
+                            <div class="content">Privoce</div>
+                        </h3>
+                    </a>
+                    <a class="item mobile-only sidebar-toggle">
+                        <i class="sidebar icon"></i>
+                    </a>
+                    <div class="header item mobile-only center aligned n-home">
+                        <h3 class="ui inverted header">O Projeto Privoce</h3>
+                    </div>
+                    <a class="item desktop-only n-problem">Problema</a>
+                    <a class="item desktop-only n-mission">Missão</a>
+                    <a class="item desktop-only n-overview">Visão geral</a>
+                    <a class="item desktop-only n-approach">Abordagem</a>
+                    <a class="item desktop-only n-feature">Recursos</a>
+                    <a class="item desktop-only n-team">Equipe</a>
+                    <a class="item desktop-only n-join">Junte-se a nós</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="ui text container">
+
+            <!--横幅巨幕-->
+            <div class="ui text container" id="banner">
+
+                <img class="ui image" src="images/cookieManagerIcon.png" alt="">
+
+                <h1 class="ui inverted header">
+                    Cookie Manager
+                </h1>
+
+                <h2>Hide your digital footprints!</h2>
+                <a href="https://chrome.google.com/webstore/detail/cookie-manager/pcmafklmeafeodgkklcoidiledfeicha">
+                <div class="ui huge primary button">
+                    obtê-lo no chrome
+                    <i class="right arrow icon"></i>
+                </div>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!--Problem-->
+    <div class="ui text container" id="problem">
+
+        <h1 class="ui horizontal divider header">
+            Problemas
+        </h1>
+
+        <div class="ui text">
+            <p>Atualmente, sem recorrer a serviços de terceiros, internautas não têm como saber se um site está ou não coletando determinados cookies ou usando outros rastreadores de navegação, e também não têm como desabilitá-los.
+            </p>
+            <p>As atividades de navegação na Web apenas enriquecem os bancos de dados das empresas da Internet, e não aumentam o poder dos internautas de controlar o que eles querem ver. Além disso, os bancos de dados de aplicações diferentes não são interoperáveis.
+            </p>
+            <p>Embora uma boa parte da Internet seja gratuita para os internautas navegarem, nós pagamos pelos serviços gratuitos com a nossa atenção, o que pode eventualmente custar caro por causa da falta de transparência no mercado.
+            </p>
+        </div>
+    </div>
+    <!--Mission-->
+    <div class="ui text container" id="mission">
+
+        <h1 class="ui horizontal divider header">
+            Nossa Missão
+        </h1>
+
+        <h2 class="ui medium header">Crie ferramentas para ampliar a propriedade e privacidade dos dados!</h2>
+
+        <div class="ui text">
+            <p>Se a Web 1.0 garantiu aos internautas o direito de visualizar conteúdo online e a Web 2.0 proporcionou o direito de publicar de maneira participativa, a Web 3.0 vai avançar ainda mais no sentido de dar aos internautas o espaço de armazenamento pessoal e computação pessoal.
+            </p>
+            <p>Há uma década, a ascensão dos smartphones e da Internet móvel revolucionou a Internet e inaugurou a era dos aplicativos — onde as companhias de Internet fazem negócios por meio de aplicativos, os quais fornecem recursos no front-end relacionados às necessidades dos usuários e, no back-end, ao armazenamento de dados. Uma grande porção da receita das companhias de Internet vem de publicidade, e isso explica por que os dados dos usuários são tão importantes para eles. Entretanto, os dados coletados por diferentes aplicativos são armazenados em silos com pouca interoperabilidade — aplicativos diferentes não conversam entre si por causa do relacionamento competitivo entre empresas da Internet, o que causa resultados desfavoráveis para as próprias empresas e também para os usuários — empresas da Internet assinam acordos para negociar dados dos usuários, e usuários podem ter dezenas de contas online sem encontrar uma maneira de gerenciar seus dados online, as chamadas pegadas digitais, ou data footprints.
+            </p>
+            <p>Como nós podemos conceder aos usuários uma melhor propriedade de seus dados pessoais? Como os internautas podem ganhar maior representação por meio de melhores meios de participar da atual economia dos dados? Com o crescimento da computação em nuvem, o modelo de nuvem pessoal e os métodos de distribuição de conteúdo relacionados têm potencial para revolucionar a Internet e atender aos ideais da Web 3.0 — a divisão do trabalho em armazenamento de dados, computação, e serviços de Internet. Junte-se a mim como os pioneiros a construírem o futuro da Internet!
+            </p>
+        </div>
+    </div>
+
+    <!--Overview-->
+    <div class="ui text container" id="overview">
+
+        <h1 class="ui horizontal divider header">
+            Visão Geral do Projeto
+
+        </h1>
+
+        <div class="ui text">
+            <p>Alora é o primeiro produto do time Privoce. O projeto Privoce visa fornecer aos internautas soluções de computação em nuvem transparentes e orientadas ao usuário. O Alora servirá como uma interface de gerenciamento de dados pessoais na era da Web 3.0, uma interface entre a madura infraestrutura de computação em nuvem (armazenamento em nuvem) e os serviços de Internet (aplicativos).
+            </p>
+        </div>
+    </div>
+
+    <!--Approach-->
+    <div class="ui text container" id="approach">
+
+        <h1 class="ui horizontal divider header">
+            Nossa Abordagem
+        </h1>
+
+        <div class="ui text">
+            <p>O Alora servirá como a ponte entre as infraestruturas de computação em nuvem e os aplicativos usados pelos internautas, e fornecerá aos usuários recursos verdadeiramente centrados no usuário, a fim de proteger a privacidade dos dados dos usuários, ampliar a interoperabilidade dos dados entre aplicativos diferentes, e preservar nossos usuários quanto à propriedade dos seus dados.
+            </p>
+        </div>
+
+    </div>
+
+    <!--Features-->
+    <div class="ui text container" id="feature">
+
+        <h1 class="ui horizontal divider header">
+            Principais Recursos do Produto
+        </h1>
+
+        <div class="ui text">
+            <p>Preservação da privacidade na navegação: auxiliar os usuários no gerenciamento de cookies, bloquear rastreadores de navegação, e manter suas suas pegadas digitais seguras.
+            </p>
+            <p>Gerenciamento de dados pessoais: fornecer aos usuários interfaces amigáveis para acompanhar seus aplicativos (aplicativos web), arquivos (recursos), contatos (relacionamentos sociais), contas (webid/login universal).
+            </p>
+            <p>Gerenciamento de anúncios e assinaturas.
+            </p>
+        </div>
+
+    </div>
+
+    <!--Team-->
+    <div class="ui text container" id="team">
+
+        <h1 class="ui horizontal divider header">
+            Our Team
+        </h1>
+
+        <div class="ui grid">
+
+            <div class="column">
+                <div class="ui fluid card">
+                    <div class="ui circular image">
+                        <img src="images/han.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="header">Han Su</div>
+                        <div class="meta">
+                            <a>Project Lead</a>
+                        </div>
+                        <div class="description">
+                            <a href="http://hansu.studio">Han Su</a> is a cosmopolitan thinker with a background in computer science and new media technologies. Han has lived across the globe and has worked in Internet startups and giant companies. Han earned his master’s degree in comparative media studies from MIT.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="ui fluid card">
+                    <div class="ui circular image">
+                        <img src="images/natalia.jpg">
+                    </div>
+                    <div class="content">
+                        <div class="header">Natalia Pinheiro</div>
+                        <div class="meta">
+                            <a>Regional Lead</a>
+                        </div>
+                        <div class="description">
+                            Natalia Pinheiro is a third-year undergraduate student majoring in Computer Science at UESB. She is interested in computer programming, human-computer interaction (HCI), games, and digital inclusion. In the past, she has taught a series of basic computing courses for the local community. While in college, she is researching the fields of programming logic learning focused on interactive narratives.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    </div>
+
+    <!--Join-->
+    <div class="ui text container" id="join">
+
+        <h1 class="ui horizontal divider header">
+            Join Us
+        </h1>
+
+        <div class="ui text">
+            <p>Se você está interessado no que estamos fazendo e gostaria de contribuir com o projeto de Privacidade, não hesite em entrar em contato! <a href="mailto:hansu@mit.edu?&subject=Interested%20in%20Privoce">contato!</a></p>
+            <!--<p>We are recruiting the following roles:</p>-->
+
+            <!--<div class="ui bulleted list">-->
+                <!--<div class="item">-->
+                    <!--<div>UI/UX Designer:</div>-->
+                    <!--<div class="list">-->
+                        <!--<div class="item">Gather and evaluate user requirements in collaboration with product managers and engineers.</div>-->
+                        <!--<div class="item">Interested in data management design.</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="item">-->
+                    <!--<div>Full-stack Engineer:</div>-->
+                    <!--<div class="list">-->
+                        <!--<div class="item">Experienced in developing web applications/extensions.</div>-->
+                        <!--<div class="item">Familiar with cookies.</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="item">-->
+                    <!--<div>Software Engineer:</div>-->
+                    <!--<div class="list">-->
+                        <!--<div class="item">With good knowledge in recommendation systems and basic web technologies.</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--<div class="item">-->
+                    <!--<div>Product Manager</div>-->
+                    <!--<div class="list">-->
+                        <!--<div class="item">Interested in Internet products and able to conduct research to obtain market information.</div>-->
+                        <!--<div class="item">Good at defining problems faced by users through qualitative analysis.</div>-->
+                        <!--<div class="item">Interested in working with UX to conduct interviews to better understand users.</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+
+    </div>
+
+    <!--页脚-->
+    <div class="ui inverted vertical segment" id="footer">
+        <div class="ui container">
+            <div class="ui equal height stackable grid">
+
+                <div class="center aligned middle aligned row">
+                    <div class="column">
+                        O Projeto Privoce - 2020
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
