@@ -1,4 +1,4 @@
-let parts = ["home", "mission", "overview", "approach", "feature", "team", "join"];
+let parts = ["home", "problem", "mission", "overview", "approach", "feature", "team", "join"];
 let displayScrollTop = false;
 let sectionPosition = 0;
 
