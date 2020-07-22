@@ -108,9 +108,7 @@ p, h1, h2, h3, h4, h5, button, a {
 }
 
 .dropdown-item:hover {
-  transition: all 0.5s ease-in;
-  color: #3835D0;
-  background-color: transparent;
+  color: #6990F2;
 }
 
 /* HEADER */
