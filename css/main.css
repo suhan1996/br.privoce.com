@@ -369,7 +369,7 @@ p.alora-info span {
 
 .toggler-button-on {
   position: relative;
-  top: 4px; left: 4px;
+  top: 4px; left: 6px;
   width: 27px;
   height: 27px;
   background-color: #FFFFFF;
@@ -383,7 +383,7 @@ p.alora-info span {
   color: #FFFFFF;
   font-size: 14px;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 .toggler-off {
@@ -399,7 +399,7 @@ p.alora-info span {
 
 .toggler-button-off {
   position: relative;
-  top: 4px; left: 9px;
+  top: 4px; left: 4px;
   width: 27px;
   height: 27px;
   background-color: #FFFFFF;
@@ -412,7 +412,7 @@ p.alora-info span {
   color: #4F4F4F;
   font-size: 14px;
   margin-top: 10px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 div.info {
@@ -641,6 +641,26 @@ div#footer h2 {
   
   .dropdown-item {
     color: #6990F2;
+  }
+
+  .nav-item:hover {
+    background-color: #FFFFFF;
+  }
+  
+  .nav-item:hover .nav-link {
+    color: #6990F2;
+  }
+  
+  .nav-item:hover .nav-link .arrow-down {
+    fill: #6990F2;
+  }
+
+  
+  .dropdown-item:hover,
+  .dropdown-item:focus,
+  .dropdown-item:active {
+    color: #6990F2;
+    background-color: #FFFFFF;
   }
 
   .no-mobile {
