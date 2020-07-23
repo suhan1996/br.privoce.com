@@ -45,3 +45,10 @@ toggle = () => {
     }
     isOn = !isOn;
 }
+
+$(function(){ 
+    var navMain = $("#navDropdown");
+    navMain.on("click", ".menu-item", null, function () {
+        navMain.collapse('hide');
+    });
+});
