@@ -485,15 +485,15 @@ div#our-team {
 }
 
 .person-container {
-  width: 100%;
   height: 250px;
+  width: auto;
   border-radius: 15px;
   margin-bottom: 20px;
 }
 
 .photo {
-  width: 100%;
   height: 250px;
+  width: auto;
   border-radius: 15px;
   margin-bottom: 20px;
   overflow: hidden;
@@ -676,6 +676,7 @@ div#footer h2 {
   .h-logo .h-img {
     margin-top: 20px;
     width: 100%;
+    height: auto;
   }
 
   .h-text h3 {
