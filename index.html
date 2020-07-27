@@ -112,7 +112,7 @@
                     <h3>Alora</h3>
                 </div>
                 <div class="row">
-                    <div class="col-sm">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
                         <p class="alora-info">
                             Alora é o primeiro produto do time Privoce. O projeto Privoce visa fornecer aos internautas soluções de computação em nuvem transparentes e orientadas ao usuário.<br/><br/>
                             O Alora servirá como uma <span>interface de gerenciamento de dados pessoais</span> na era da Web 3.0, uma interface entre a madura infraestrutura de computação em nuvem (armazenamento em nuvem) e os serviços de Internet (aplicativos).
@@ -123,38 +123,37 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm"></div>
                 </div>
-                <div class="row">
-                    <div class="col-sm"></div>
-                    <div class="col-sm">
-                        <!-- Extension preview -->
-                        <div class="card-extension">
-                            <div class="title-ext">
-                                <img id="icon-alora" src="assets/icon-off.png"/>
-                                <h3>Alora</h3>
-                            </div>
-                            <div class="body-ext">
-                                <h4>Nunca rastreie meu histórico de navegação em</h4>
-                                <div class="website">
-                                    <img class="icon-site" src="assets/site-icon.svg">
-                                    <p class="url-site">openprocessing.org</p>
+                <div class="container">
+                    <div class="row">
+                        <div id="container-card" class="ml-auto">
+                            <!-- Extension preview -->
+                            <div class="card-extension">
+                                <div class="title-ext">
+                                    <img id="icon-alora" src="assets/icon-off.png"/>
+                                    <h3>Alora</h3>
                                 </div>
-                                <div class="toggle-div" style="cursor: pointer" onclick="toggle()">
-                                    <div id="toggler" class="toggler-off mx-auto">
-                                        <h5 id="txt-on">ON</h5>
-                                        <div id="toggler-button" class="toggler-button-off" ></div>
-                                        <h5 id="txt-off">OFF</h5>
+                                <div class="body-ext">
+                                    <h4>Nunca rastreie meu histórico de navegação em</h4>
+                                    <div class="website">
+                                        <img class="icon-site" src="assets/site-icon.svg">
+                                        <p class="url-site">openprocessing.org</p>
+                                    </div>
+                                    <div class="toggle-div" style="cursor: pointer" onclick="toggle()">
+                                        <div id="toggler" class="toggler-off mx-auto">
+                                            <h5 id="txt-on">ON</h5>
+                                            <div id="toggler-button" class="toggler-button-off" ></div>
+                                            <h5 id="txt-off">OFF</h5>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <img id="infoicon" src="assets/info.svg">
+                                        <p>O Alora vai te ajudar a reduzir a quantidade de anúncios e a limpar o cache e os cookies relacionados a este site neste computador.</p>
                                     </div>
                                 </div>
-                                <div class="info">
-                                    <img id="infoicon" src="assets/info.svg">
-                                    <p>O Alora vai te ajudar a reduzir a quantidade de anúncios e a limpar o cache e os cookies relacionados a este site neste computador
-                                        .</p>
-                                </div>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -199,14 +198,15 @@
                     de inovadores, solucionadores,<br/>
                     desenvolvedores, e designers
                 </h2>
-                <div class="team-content">
-                    <div class="row">
-                        <div class="person col-sm-4">
-                            <div class="person-container">
-                                <div class="photo">
-                                    <img src="assets/people/han.jpg">
-                                </div>
-                                <div class="person-description">
+                <div class="people">
+                    <div class="structure">
+
+                        <div class="p-container">
+                            <div class="person">
+                                <div class="photo"
+                                    style="background-image: url('./assets/people/han.jpg');"
+                                ></div>
+                                <div class="p-description">
                                     <div>
                                         <p>
                                             <a href="http://hansu.studio">Han Su</a> é um pensador cosmopolitano com background em ciência da computação e novas tecnologias de mídia. Han obteu seu título de mestre em Comparative Media Studies no MIT.
@@ -214,52 +214,56 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="person-info">
+                            <div class="p-info">
                                 <h3 style="font-weight: bolder;">Han Su</h3>
                                 <h3>Líder do Projeto</h3>
                             </div>
                         </div>
-
-                        <div class="person col-sm-4">
-                            <div class="person-container">
-                                <div class="photo">
-                                    <img src="assets/people/natalia.jpg">
-                                </div>
-                                <div class="person-description">
+                        
+                        <div class="p-container">
+                            <div class="person">
+                                <div class="photo"
+                                    style="background-image: url('./assets/people/natalia.jpg');"
+                                ></div>
+                                <div class="p-description">
                                     <div>
                                         <p>
-                                            Natalia Pinheiro é uma estudante de Ciência da Computação na UESB. Suas áreas de interesse são, mas não se limitam a, interação humano-computador (IHC), programação de computadores, jogos educativos e sistemas interativos.
+                                            Natalia Pinheiro é uma estudante de Ciência da Computação na UESB. Suas áreas de interesse são interação humano-computador, programação de computadores, jogos educativos e sistemas interativos.
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <h3 style="font-weight: bolder;">Natalia Pinheiro</h3>
-                            <h3>Líder Regional</h3>
+                            <div class="p-info">
+                                <h3 style="font-weight: bolder;">Natalia Pinheiro</h3>
+                                <h3>Líder Regional</h3>
+                            </div>
                         </div>
 
-                        <div class="person col-sm-4">
-                            <div class="person-container">
-                                <div class="photo">
-                                    <img src="assets/people/andre.jpg">
-                                </div>
-                                <div class="person-description">
+                        <div class="p-container">
+                            <div class="person">
+                                <div class="photo"
+                                    style="background-image: url('./assets/people/andre.jpg');"
+                                ></div>
+                                <div class="p-description">
                                     <div>
                                         <p>
-                                            André Andrade é um estudante de Sistemas de Informação na UESB. Seus interesses são programação de computadores, diversidade e questões relacionadas a igualdade de gênero e automação residencial assistiva. Sua pesquisa é sobre softwares educacionais e sistemas de gerenciamento.
+                                            André Andrade é um estudante de Sistemas de Informação na UESB. Seus interesses são programação de computadores, diversidade e questões relacionadas a igualdade de gênero e automação residencial assistiva.
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <h3 style="font-weight: bolder;">André Andrade</h3>
-                            <h3>Representante Regional</h3>
+                            <div class="p-info">
+                                <h3 style="font-weight: bolder;">André Andrade</h3>
+                                <h3>Representante Regional</h3>
+                            </div>
                         </div>
 
-                        <div class="person col-sm-4">
-                            <div class="person-container">
-                                <div class="photo">
-                                    <img src="assets/people/joao.jpg">
-                                </div>
-                                <div class="person-description">
+                        <div class="p-container">
+                            <div class="person">
+                                <div class="photo"
+                                    style="background-image: url('./assets/people/joao.jpg');"
+                                ></div>
+                                <div class="p-description">
                                     <div>
                                         <p>
                                             João Andreotti é um estudante de Ciência da Computação da UESB. Seus interesses incluem programação competitiva, redes de computadores e segurança de computadores.
@@ -267,25 +271,29 @@
                                     </div>
                                 </div>
                             </div>
-                            <h3 style="font-weight: bolder;">João Andreotti</h3>
-                            <h3>Representante Regional</h3>
+                            <div class="p-info">
+                                <h3 style="font-weight: bolder;">João Andreotti</h3>
+                                <h3>Representante Regional</h3>
+                            </div>
                         </div>
 
-                        <div class="person col-sm-4">
-                            <div class="person-container">
-                                <div class="photo">
-                                    <img src="assets/people/victoria.jpg">
-                                </div>
-                                <div class="person-description">
+                        <div class="p-container">
+                            <div class="person">
+                                <div class="photo"
+                                    style="background-image: url('./assets/people/victoria.jpg');"
+                                ></div>
+                                <div class="p-description">
                                     <div>
                                         <p>
-                                            Victória é uma estudante de Sistemas de Informação na UESB. Ela tem interesse em programação de computadores e estuda o impacto e a importância da tecnologia na sociedade.
+                                            Victória Trindade é uma estudante de Sistemas de Informação na UESB. Ela tem interesse em programação de computadores e estuda o impacto e a importância da tecnologia na sociedade.
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <h3 style="font-weight: bolder;">Victória Trindade</h3>
-                            <h3>Representante Regional</h3>
+                            <div class="p-info">
+                                <h3 style="font-weight: bolder;">Victória Trindade</h3>
+                                <h3>Representante Regional</h3>
+                            </div>
                         </div>
 
                     </div>

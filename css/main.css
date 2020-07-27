@@ -33,6 +33,12 @@ p, h1, h2, h3, h4, h5, button, a {
   padding: 0;
 }
 
+@media screen and (max-width:992px) {
+  .navbar {
+    width: auto;
+  }
+}
+
 .nav-brand {
   position: relative;
   display: flex;
@@ -301,8 +307,12 @@ p.alora-info span {
   font-weight: bold;
 }
 
+.card-container {
+  margin-left: auto !important;
+}
+
 .card-extension {
-  width: 500px;
+  max-width: 500px;
   background-color: #FFFFFF;
   border-radius: 15px;
   box-sizing: border-box;
@@ -476,58 +486,74 @@ div#our-team {
   margin-top: 50px;
 }
 
-.person {
-  width: 100%;
-  height: auto;
-  padding: 30px;
-
-  text-align: center;
+.people {
+  margin-top: 50px;
 }
 
-.person-container {
-  height: 250px;
-  width: auto;
-  border-radius: 15px;
+.p-container {
+  float: left;
+  width: 33.33%;
+  height: auto;
+  padding: 10px 30px;
+}
+
+.structure:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 768px) {
+  .p-container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width:992px) {
+  .p-container {
+    width: 50%;
+  }
+}
+
+.person {
   margin-bottom: 20px;
 }
 
 .photo {
   height: 250px;
-  width: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   border-radius: 15px;
-  margin-bottom: 20px;
-  overflow: hidden;
 }
 
-.person img {
-  height: 250px;
-  display: block;
+.p-info {
+  height: 100px;
 }
 
-.person-description {
+.p-info h3 {
+  color: #000000;
+  font-size: 22px;
+  text-align: left;
+}
+
+.p-description {
   display: none;
-  width: 100%;
   height: 250px;
+  background-color: #FFF;
   border-radius: 15px;
-  margin-bottom: 20px;
 
   background-color: #FFFFFF;
   border: 1px solid #6990F2;
   padding: 20px 15px;
 }
 
-.person-description div {
+.p-description div {
   display: table-cell;
   vertical-align: middle;
 }
 
-.person h3 {
-  color: #000000;
-  font-size: 22px;
-  text-align: left;
-}
-
-.person-description p, .person-description p a {
+.p-description p, .p-description p a {
   font-size: 14px;
   text-align: left;
   color: #4F4F4F;
@@ -536,13 +562,12 @@ div#our-team {
   margin-block-end: 0 !important;
 }
 
-.person-container:hover .photo {
-  display: none;
+.person:hover .p-description {
+  display: table;
 }
 
-.person-container:hover .person-description {
-  transition: all 0.5s ease-in;
-  display: table;
+.person:hover .photo {
+  display: none;
 }
 
 /* JOIN US */
@@ -657,7 +682,6 @@ div#footer h2 {
     fill: #6990F2;
   }
 
-  
   .dropdown-item:hover,
   .dropdown-item:focus,
   .dropdown-item:active {
