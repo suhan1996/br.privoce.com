@@ -120,6 +120,23 @@ p, h1, h2, h3, h4, h5, button, a {
   color: #FFFFFF;
 }
 
+img.flag {
+  width: 30px;
+}
+
+.flag-menu {
+  min-width: 50px;
+}
+
+.flag-item {
+  width: auto !important;
+  display: inline-block !important;
+}
+
+.no-desktop {
+  display: none;
+}
+
 /* HEADER */
 #header {
   position: relative;
@@ -691,6 +708,61 @@ div#footer h2 {
 
   .no-mobile {
     display: none;
+  }
+
+  .no-desktop {
+    display: inline;
+  }
+
+  #dropdownFlags {
+    display: flex;
+  }
+  
+  .arrow-tip {
+    -webkit-animation-name: arrow-tip-animation;
+    -webkit-animation-duration: 2.2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 0.4s;
+    width: 16px;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
+  
+  @-webkit-keyframes arrow-tip-animation {
+    0% {
+        opacity: 0;
+        padding-left: 0;
+    }
+  
+    50% {
+        opacity: 0.65;
+    }
+  
+    100% {
+        opacity: 0;
+        padding-left: 0.5rem;
+    }
+  }
+
+  img.flag {
+    height: 16px !important;
+  }
+
+  .mobile-flag-link {
+    display: flex;
+  }
+
+  .flag-menu.show {
+    display: table;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .flag-item {
+    display: table-cell;
+    vertical-align: middle !important;
+    margin: 0 10px !important;
+    padding: 0 !important;
   }
 
   .h-container {
