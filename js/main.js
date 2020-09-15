@@ -1,4 +1,15 @@
+window.onload = () => {
+
+    let buttons = document.querySelectorAll('.get-extension');
+
+    if (typeof InstallTrigger !== 'undefined') {
+        buttons[0].href = buttons[1].href = "https://addons.mozilla.org/firefox/addon/alora/";
+    }
+}
+
+
 let isOn = false;
+
 
 scrollToSection = (section) => {
     let offset = document.getElementById(section).offsetTop;
