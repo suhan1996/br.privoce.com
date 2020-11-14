@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 html, body {
   margin: 0;
   height: 100%;
+  width: 100%;
 }
 
 p, h1, h2, h3, h4, h5, button, a {
@@ -53,10 +55,11 @@ p, h1, h2, h3, h4, h5, button, a {
   position: relative;
   padding: 8px 0 0 15px;
   height: 100%;
-
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
+  font-weight: bolder;
+  font-size: 28px;
+}
+#alora-pic {
+  height: 40vmax;
 }
 
 .navbar-toggler-icon {
@@ -84,8 +87,18 @@ p, h1, h2, h3, h4, h5, button, a {
 
 .nav-link {
   font-style: normal;
-  font-weight: normal;
+  font-weight: lighter;
   font-size: 18px;
+  color: #000000;
+}
+
+.nav-link svg {
+  fill: #000000;
+}
+
+.nav-item:hover svg {
+  transition: all 0.2s ease-in;
+  fill: #FFFFFF;
 }
 
 .nav-item:hover {
@@ -110,7 +123,8 @@ p, h1, h2, h3, h4, h5, button, a {
 }
 
 .dropdown-item {
-  color: #6990F2;
+  margin: 10px 0;
+  color: #000000;
 }
 
 .dropdown-item:hover,
@@ -146,33 +160,132 @@ img.flag {
   padding-top: 90px;
 }
 
+.decor {
+  z-index: 0;
+}
+
 .h-container {
   margin-top: 120px;
 }
 
-.h-text {
+.h-text-section {
+  width: 60%;
+  z-index: 5;
+}
+
+.h-text-section h2 {
+  margin-bottom: 20px;
+
+  font-size: 50px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.h-text-section p {
+  width: 80%;
+  line-height: 28px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: lighter;
+  color: #4F4F4F;
+}
+
+.h-img-section {
+  margin: -50px 0 0 -100px;
+}
+
+.h-logo {
   height: 100%;
   width: 100%;
 }
 
-.h-text h1, .h-text p {
+.h-logo .h-img {
+  margin-top: -5vmax;
+  height: 36vmax;
+}
+
+div.scrolling-hint {
+  margin-top: -5vmax;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+img.scrolling-hint {
+  -webkit-animation-name: scrolling-hint-animation;
+  -webkit-animation-duration: 2.2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 0.4s;
+  cursor: pointer;
+}
+
+@-webkit-keyframes scrolling-hint-animation {
+  0% {
+    opacity: 0;
+    margin-top: 0;
+  }
+
+  50% {
+    opacity: 0.65;
+  }
+
+  100% {
+    opacity: 0;
+    margin-top: 1.5rem;
+  }
+}
+
+/* PRODUCTS SECTION */
+div#products {
+  width: 100%;
+  height: auto;
+}
+
+.p-text {
+  height: 100%;
+  margin: 100px 12%;
+}
+
+.p-text h2, .p-text p {
   margin-bottom: 20px;
   font-style: normal;
 }
 
-.h-text h1 {
+.p-text h2 {
   font-weight: bold;
   font-size: 50px;
 }
 
-.h-text p {
-  margin-top: 10px;
+.p-text h3 {
+  font-size: 24px;
+  color: #000000;
+}
+
+.p-text h4 {
+  padding-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFBD2E;
+}
+
+.p-text p {
   font-size: 16px;
 }
 
-.h-text h3 {
+.p-text h3 {
   font-weight: 600;
-  font-size: 26px;
+  font-size: 32px;
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+}
+
+.col-left {
+  width: 40%;
+}
+
+.col-left img {
+  width: 100%;
 }
 
 .btn-get-extension {
@@ -206,47 +319,126 @@ img.flag {
   color: #6990F2;
 }
 
+.col-img {
+  margin: 70px 0 20px 0;
+  padding: 0 20px 0 0 !important;
+}
 
-.h-logo {
+.col-img img {
+  width: 100%;
+}
+
+.entro-list {
+  margin-top: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.entro-list li {
+  padding: 10px 0;
+  
+  font-size: 18px;
+}
+
+.col-right {
+  width: 40%;
+}
+
+.e-container {
+  margin: 100px 0;
+  width: auto;
+  height: 80%;
+}
+
+.e-card {
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 100px;
+  background-color: rgb(207, 221, 255, 0.5);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.e-body {
+  padding: 40px;
+}
+
+.e-body h3 {
+  padding-bottom: 20px;
+
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  color: #4F4F4F;
+}
+
+.e-section-a {
+  margin-bottom: 10px;
+  position: relative;
+  background-color: #FFFFFF;
+  height: 30px;
+  width: 80%;
+}
+
+.e-section-b {
+  margin-bottom: 10px;
+  position: relative;
+  background-color: rgb(255, 255, 255, 0.5);
+  height: 70px;
+  width: 90%;
+}
+
+/* MORE ON ALORA */
+div.alora-info {
+  width: 100%;
+  height: 25em;
+}
+
+div.alora-info div {
+  width: 50%;
+  margin: 200px auto;
+}
+
+div.alora-info p {
+  font-size: 18px;
+  color: #4F4F4F;
+}
+
+div.alora-info p span {
+  color: #6990F2;
+}
+
+div#next-steps {
+  width: 100%;
   height: 100%;
-  width: 100%;
+  margin-top: 50px;
+  padding-top: 10%;
 }
 
-.h-logo .h-img {
-  margin-top: -5vmax;
-  height: 36vmax;
+.next-content {
+  padding-left: 200px;
 }
 
-div.scrolling-hint {
-  margin-top: -5vmax;
-  width: 100%;
-  height: 100px;
-  text-align: center;
+.list li {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-img.scrolling-hint {
-  -webkit-animation-name: scrolling-hint-animation;
-  -webkit-animation-duration: 2.2s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-delay: 0.4s;
-  cursor: pointer;
+li.marked {
+  list-style-image: url('../assets/marked.svg');
+  color: #6990F2;
 }
 
-@-webkit-keyframes scrolling-hint-animation {
-  0% {
-      opacity: 0;
-      margin-top: 0;
-  }
-
-  50% {
-      opacity: 0.65;
-  }
-
-  100% {
-      opacity: 0;
-      margin-top: 1.5rem;
-  }
+li.not-marked {
+  list-style-image: url('../assets/not-marked.svg');
+  color: #6A7073;
 }
+
+li.not-marked span {
+  font-weight: normal !important;
+}
+
 
 /* OUR MISSION */
 div#mission {
@@ -278,13 +470,18 @@ div.content {
 }
 
 div.content h2 {
-  color: #4F4F4F !important;
-  text-align: center;
-  font-size: 30px;
+  width: 80%;
+  color: #000000 !important;
+  font-size: 50px;
   font-weight: bold;
 }
 
+.card-container {
+  width: 100%;
+}
+
 .info-card {
+  float: right;
   background-color: #FFFFFF;
   width: 70%;
   padding: 50px;
@@ -294,197 +491,15 @@ div.content h2 {
   border-radius: 15px;
   box-sizing: border-box;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15),
-    20px 20px 0px rgba(105, 144, 242, 1);
+  20px 20px 0px rgba(105, 144, 242, 1);
 }
-
 #infoicon{
   margin-top: -18px;
 }
-
 .info-card p {
+
   color: #4F4F4F;
   font-size: 18px;
-}
-
-/* ALORA SECTION */
-div#alora {
-  width: 100%;
-  height: auto;
-}
-
-p.alora-info {
-  color: #4F4F4F;
-  font-size: 18px;
-  margin-block-start: 0 !important;
-  margin-block-end: 0 !important;
-}
-
-p.alora-info span {
-  color: #6990F2 !important;
-  font-weight: bold;
-}
-
-.card-container {
-  margin-left: auto !important;
-}
-
-.card-extension {
-  max-width: 500px;
-  background-color: #FFFFFF;
-  border-radius: 15px;
-  box-sizing: border-box;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-}
-
-.title-ext {
-  width: 100%;
-  height: 60px;
-  padding: 10px 20px 0 20px;
-  display: flex;
-  flex-direction: row;
-}
-
-#icon-alora {
-  width: 60px;
-  height: 60px;
-  background: url('../assets/icon-off.png') center center no-repeat;
-  background-size: cover;
-}
-
-.title-ext h3 {
-  margin: 15px 0 0 10px;
-
-  color: #3835D0 !important;
-  font-weight: bolder;
-  font-size: 24px;
-}
-
-.body-ext {
-  padding: 25px;
-  text-align: center;
-}
-
-.body-ext h4 {
-  color: #000000;
-  font-size: 14px;
-  font-weight: bolder;
-}
-
-.website {
-  margin: 15px;
-  display: inline-flex;
-}
-
-.url-site {
-  margin-top: 15px;
-  margin-left: 10px;
-
-  color: #000000;
-  font-size: 14px;
-}
-
-.toggler-on {
-  text-align: center;
-  background-color: #3835D0;
-  width: 90px;
-  height: 35px;
-  margin: 0;
-  border-radius: 30px;
-  display: flex;
-  z-index: 1;
-}
-
-.toggler-button-on {
-  position: relative;
-  top: 4px !important;
-  left: 6px !important;
-  width: 27px;
-  height: 27px;
-  background-color: #FFFFFF;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 2;
-}
-
-#txt-on {
-  display: none;
-  color: #FFFFFF;
-  font-size: 14px;
-  margin-top: 10px !important;
-  margin-left: 30px !important;
-}
-
-.toggler-off {
-  text-align: center;
-  background-color: #cccccc;
-  width: 90px;
-  height: 35px;
-  margin: 0;
-  border-radius: 30px;
-  display: flex;
-  z-index: 1;
-}
-
-.toggler-button-off {
-  position: relative;
-  top: 4px !important;
-  left: 4px !important;
-  width: 27px;
-  height: 27px;
-  background-color: #FFFFFF;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 2;
-}
-
-#txt-off {
-  color: #4F4F4F;
-  font-size: 14px;
-  margin-top: 10px !important;
-  margin-left: 10px !important;
-}
-
-div.info {
-  display: flex;
-  padding: 20px;
-}
-
-div.info p {
-  color: #000000;
-  font-size: 10px;
-  text-align: left;
-  margin: 10px;
-}
-
-/* MORE ON ALORA */
-div#about-alora {
-  width: 100%;
-  height: auto;
-  margin-top: 50px;
-}
-
-.a-a-content {
-  padding-left: 200px;
-}
-
-.list li {
-  margin-bottom: 20px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-li.marked {
-  list-style-image: url('../assets/marked.svg');
-  color: #6990F2;
-}
-
-li.not-marked {
-  list-style-image: url('../assets/not-marked.svg');
-  color: #6A7073;
-}
-
-li.not-marked span {
-  font-weight: normal !important;
 }
 
 /* OUR TEAM */
@@ -504,7 +519,7 @@ div#our-team {
 }
 
 .people {
-  margin-top: 50px;
+  margin: 100px 0 150px 0;
 }
 
 .p-container {
@@ -537,7 +552,7 @@ div#our-team {
 }
 
 .photo {
-  height: 250px;
+  height: 275px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -545,7 +560,7 @@ div#our-team {
 }
 
 .p-info {
-  height: 100px;
+  height: 120px;
 }
 
 .p-info h3 {
@@ -556,7 +571,7 @@ div#our-team {
 
 .p-description {
   display: none;
-  height: 250px;
+  height: 275px;
   background-color: #FFF;
   border-radius: 15px;
 
@@ -585,6 +600,27 @@ div#our-team {
 
 .person:hover .photo {
   display: none;
+}
+
+.card {
+  border: 1px solid #6A7073;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.card-img {
+  display: table-column;
+  vertical-align: middle;
+  border-radius: 0 !important;
+  height: 100%;
+}
+
+.card-text, .card-title {
+  color: #4F4F4F;
+}
+
+.card-title {
+  font-weight: bold;
 }
 
 /* JOIN US */
@@ -618,15 +654,20 @@ div#footer {
 div#footer h2 {
   margin: 0;
   padding-top: 40px;
-  height: 100%;
   width: 100%;
   color: #FFFFFF;
   font-size: 18px;
 }
 
+div#footer a {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
 
 @media screen and (max-width:1000px) {
-  
+
   .nav-container {
     background-color: #FFFFFF;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05) !important;
@@ -635,24 +676,24 @@ div#footer h2 {
     position: fixed;
     z-index: 10;
   }
-  
+
   .navbar {
     position: relative;
     margin: 0 5% 0 5%;
     padding: 10px;
   }
-  
+
   .nav-brand {
     position: relative;
     display: flex;
     height: 40px;
   }
-  
+
   .navbar-toggler-icon {
     padding-top: 5px;
     fill: #6990F2;
   }
-  
+
   .nav-links {
     position: relative;
     height: auto;
@@ -662,11 +703,11 @@ div#footer h2 {
     right: 5%;
     margin: 0;
   }
-  
+
   .nav-links ul {
     display:  block;
   }
-  
+
   .nav-item {
     padding-left: 15px;
     padding-right: 15px;
@@ -675,34 +716,39 @@ div#footer h2 {
     padding: 10px;
     margin: 0 !important;
   }
- 
+
   .dropdown-menu {
     width: 100%;
     text-align: left;
     border: none;
     box-shadow: none;
   }
-  
+
   .dropdown-item {
-    color: #6990F2;
+    color: #000000;
   }
 
   .nav-item:hover {
     background-color: #FFFFFF;
   }
-  
+
   .nav-item:hover .nav-link {
-    color: #6990F2;
+    color: #000000;
   }
-  
+
   .nav-item:hover .nav-link .arrow-down {
-    fill: #6990F2;
+    fill: #000000;
   }
+
+  .nav-item:hover svg {
+    fill: #000000;
+  }
+
 
   .dropdown-item:hover,
   .dropdown-item:focus,
   .dropdown-item:active {
-    color: #6990F2;
+    color: #000000;
     background-color: #FFFFFF;
   }
 
@@ -717,7 +763,7 @@ div#footer h2 {
   #dropdownFlags {
     display: flex;
   }
-  
+
   .arrow-tip {
     -webkit-animation-name: arrow-tip-animation;
     -webkit-animation-duration: 2.2s;
@@ -727,17 +773,17 @@ div#footer h2 {
     margin-top: auto !important;
     margin-bottom: auto !important;
   }
-  
+
   @-webkit-keyframes arrow-tip-animation {
     0% {
         opacity: 0;
         padding-left: 0;
     }
-  
+
     50% {
         opacity: 0.65;
     }
-  
+
     100% {
         opacity: 0;
         padding-left: 0.5rem;
@@ -765,6 +811,28 @@ div#footer h2 {
     padding: 0 !important;
   }
 
+  .h-text-section {
+    width: 100%;
+    margin: 20px;
+  }
+
+  .h-text-section h2 {
+    font-size: 40px;
+  }
+
+  .h-text-section p {
+    width: 100%;
+  }
+
+  .h-img-section {
+    margin: 0;
+  }
+
+  .h-img-section img {
+    width: 50%;
+    margin-left: 30%;
+  }
+  
   .h-container {
     margin-top: 20px;
   }
@@ -775,34 +843,72 @@ div#footer h2 {
     height: auto;
   }
 
-  .h-text h3 {
+  .p-text h3 {
     font-size: 28px;
+  }
+
+  div.alora-info div {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .p-text {
+    height: 100%;
+    margin: 0 12%;
+  }
+
+  .c-products {
+    margin-bottom: 20px;
+  }
+
+  .col-right {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+  }
+
+  .e-card {
+    position: relative;
+    right: 0;
+    padding-bottom: 30px;
+  }
+
+  .e-body h3 {
+    font-size: 18px;
+  }
+
+  .e-section-a {
+    height: 15px;
+  }
+
+  .e-section-b {
+    height: 30px;
+  }
+
+  div.content h2 {
+    width: 100%;
+    color: #000000 !important;
+    font-size: 30px;
+    font-weight: bold;
   }
 
   .info-card {
     width: 90% !important;
     padding: 20px !important;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15),
-      10px 10px 0px rgba(105, 144, 242, 1) !important;
+    10px 10px 0px rgba(105, 144, 242, 1) !important;
   }
 
   .info-card p {
     font-size: 16px;
   }
 
-  .card-extension {
-    margin-top: 70px !important;
+  .next-content {
+    padding-left: 20px;
   }
 
-  .a-a-content {
-    padding: 50px 0 0 20px !important;
-  }
-
-  .card-extension {
+  .footer {
     width: 100%;
-    background-color: #FFFFFF;
-    border-radius: 15px;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   }
 }

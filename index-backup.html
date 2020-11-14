@@ -2,20 +2,19 @@
 <html lang="pt-br">
     <head>
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177602610-2"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177602610-1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'UA-177602610-2');
+            gtag('config', 'UA-177602610-1');
         </script>
         <title>O Projeto Privoce - Alora</title>
-        <link rel="icon" type="image/png" href="assets/favicon.png"/>
         <meta charset="utf-8">
         <meta content="width=device-width, user-scalable=no" name="viewport"/>
-        <meta name="description" content="Tenha controle sobre os seus dados, digital footprints, e conexões sociais com os produtos Privoce.">
-
+        <meta name="description" content="Assuma o controle sobre os seus dados. Com Alora, o seu gerenciador de dados pessoais, é você que manda.">
+        <link rel="icon" type="image/png" href="assets/favicon.png"/>
         <link href="lib/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <script src="lib/jquery/jquery.min.js"></script>
         <script src="lib/js/bootstrap.min.js"></script>
@@ -29,9 +28,9 @@
         <div class="nav-container">
             <nav class="navbar navbar-expand-lg menu">
                 <a class="navbar-brand" href="#" onclick="scrollToSection('header')">
-                    <div class="nav-brand menu-item">
+                    <div class="nav-brand">
                         <img draggable="false" class="img-brand" src="assets/lock.svg" alt="lock">
-                        <h1 class="name-brand">Privoce</h1>
+                        <h2 class="name-brand">Privoce</h2>
                     </div>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navDropdown" aria-controls="navDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,21 +41,17 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" id="dropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Nossos Produtos
-                                <svg width="10" height="10" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
+                                <svg width="10" height="10" viewBox="0 0 24 24"><path class="arrow-down" d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" fill="#6990F2"/></svg>
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenu">
-                                <a class="dropdown-item menu-item" href="#" onclick="scrollToSection('alora')">Alora</a>
-                                <a class="dropdown-item menu-item" href="#" onclick="scrollToSection('entro')">Entro</a>
+                            <div class="dropdown-menu menu-item" aria-labelledby="dropdownMenu">
+                                <a class="dropdown-item item" href="#" onclick="scrollToSection('alora')">Alora</a>
                             </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link menu-item" href="#" onclick="scrollToSection('mission')">Missão</a>
+                        <li class="nav-item menu-item">
+                            <a class="nav-link item" href="#" onclick="scrollToSection('our-team')">Equipe</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link menu-item" href="#" onclick="scrollToSection('our-team')">Time</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link menu-item" href="#" onclick="scrollToSection('join-us')">Junte-se a nós</a>
+                        <li class="nav-item menu-item">
+                            <a class="nav-link item" href="#" onclick="scrollToSection('join-us')">Junte-se a nós</a>
                         </li>
                         <li class="nav-item dropdown mobile-flag-link">
                             <a class="nav-link" href="#" id="dropdownFlags" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -82,148 +77,129 @@
 
         <!-- Header -->
         <div id="header">
-            <img draggable="false" class="decor no-mobile" src="assets/rect.svg" alt="" style="position: absolute;">
-            <img draggable="false" class="decor no-mobile" src="assets/ellipse.svg" alt="" style="position: absolute; right: 0; bottom: 0;">
+            <img draggable="false" class="no-mobile" src="assets/rect.svg" alt="" style="position: absolute;">
+            <img draggable="false" class="no-mobile" src="assets/ellipse.svg" alt="" style="position: absolute; right: 0; bottom: 0;">
             <div class="container h-container">
                 <div class="row">
-                    <div class="h-text-section">
-                        <h2>Empodere-se na era da Web 3.0</h2>
+                    <div class="h-text col-sm">
+                        <h1>Alora</h1>
+                        <h3>Garanta sua privacidade em um passe de mágica!</h3>
                         <p>
-                            Tenha controle sobre os seus dados, digital footprints, e conexões sociais com os produtos Privoce.
-                        </p>
-                    </div>
-                    <div class="h-img-section">
-                        <img draggable="false" src="./assets/geometrics.png" alt="illustration"/>
-                    </div>
-                </div>
-            </div>
-            <div class="scrolling-hint no-mobile" onclick="scrollToSection('products')">
-                <img class="scrolling-hint" draggable="false"
-                    src="assets/double-down-arrow.svg"
-                    style="width: 30px;"
-                    alt="v"
-                />
-            </div>
-        </div>
-
-        <!-- Products section -->
-        <div id="products">
-            <div class="container c-products">
-                <div class="title-section">
-                    <img draggable="false" src="assets/dec2.svg" alt=""/>
-                    <h3>Nossos Produtos</h3>
-                </div>
-            </div>
-            <div id="alora" class="container-fluid">
-                
-                <div class="row">
-                    <div class="col-left no-mobile">
-                        <img draggable="false" src="assets/alorapic.png" alt="Alora">
-                    </div>
-                    <div class="p-text col-sm">
-                        <h2>Alora</h2>
-                        <p>
-                            /əˈlɔrə/<br/>
                             Assuma o controle sobre os seus dados. Com Alora, o seu gerenciador de dados pessoais, é você que manda.
                         </p>
-                        <h3>Garanta sua privacidade em um passe de mágica!</h3>
                         <div class="btn-get-extension">
                             <a class="get-extension" href="https://chrome.google.com/webstore/detail/cookie-manager/pcmafklmeafeodgkklcoidiledfeicha">
                                 Usar Alora
                             </a>
                         </div>
                     </div>
-                    <div class="col-sm no-desktop col-img">
-                        <img draggable="false" src="assets/alorapic.png" alt="Alora">
-                    </div>
-                </div>
-
-                <div class="container alora-info">
-                    <div>
-                        <p>
-                            <a href="https://chrome.google.com/webstore/detail/cookie-manager/pcmafklmeafeodgkklcoidiledfeicha">Alora</a> é o primeiro produto do time Privoce. O nosso objetivo é te devolver o controle sobre os seus dados e garantir sua privacidade na Internet.<br/>
-                            Nós acreditamos que te ajudar a gerenciar seus dados é tão importante quanto protegê-los. Portanto, nosso próximo produto Entro servirá como um <span>portal de gerenciamento de dados pessoais</span> para você!
-                        </p>
+                    <div class="h-logo col-sm">
+                        <img draggable="false" class="h-img" alt="magic wand" src="assets/logo-header.png"/>
                     </div>
                 </div>
             </div>
 
-            <div class="container-fluid">
-                
-                <div class="row">
-                    <div id="entro" class="p-text col-sm">
-                        <h2>Entro</h2>
-                        <h4>Em Breve</h4>
-                        <ul class="entro-list">
-                            <li>Sua página de portal pessoal.</li>
-                            <li>Gerenciamento de áreas de trabalho e fácil navegação.</li>
-                            <li>Acesso rápido às funções das aplicações usadas frequentemente.</li>
-                            <li>Widgets para ver notificações antes de visitar um site.</li>
-                            <li>Salvar conteúdos para ver depois.</li>
-                        </ul>
-                    </div>
-                    <div class="col-right">
-                        <div class="e-container">
-                            <div class="e-card">
-                                <div class="e-body">
-                                    <h3>Portal Pessoal</h3>
-                                    <div class="e-section-a"></div>
-                                    <div class="e-section-a"></div>
-                                    <div class="e-section-a"></div>
-                                    <div class="e-section-b"></div>
-                                    <div class="e-section-a"></div>
-                                    <div class="e-section-b"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="scrolling-hint no-mobile" onclick="scrollToSection('mission')">
+                <img draggable="false" class="scrolling-hint" alt="v"
+                    src="assets/double-down-arrow.svg"
+                    style="width: 30px;"
+                />
             </div>
         </div>
-        
 
         <!-- Our mission section -->
         <div id="mission">
             <div class="container">
-                <div class="title-section">
-                    <img draggable="false" src="assets/dec1.svg" alt=""/>
-                    <h3>Nossa Missão</h3>
-                </div>
                 <div class="content">
                     <h2>A sua privacidade na Internet vem sendo ameaçada</h2>
-                    <div class="card-container">
-                        <div class="info-card">
-                            <p>
-                                Anúncios direcionados. Venda de dados. Escândalos de vazamento e roubo de dados. Você certamente já ouviu falar de tudo isso.<br/><br/>
-                                A Internet permite que as pessoas façam suas atividades do dia-a-dia, desde interagir com outras, fazer compras, consumir e criar conteúdo, até realizar transações financeiras, tudo isso de forma revolucionária, quebrando as barreiras do tempo, da geografia e do idioma.<br/><br/>
-                                Esses serviços são instantâneos e, muitas vezes, gratuitos. Mas, na Internet, quando o serviço é de graça, o produto é você. Quando você usa um serviço, você paga com a sua atenção, com os seus dados e, muitas vezes, de maneira oculta e invasora.
-                            </p>
+                    <div class="info-card mx-auto">
+                        <p>
+                            Anúncios direcionados. Venda de dados. Escândalos de vazamento e roubo de dados. Você certamente já ouviu falar de tudo isso.<br/><br/>
+                            A Internet permite que as pessoas façam suas atividades do dia-a-dia, desde interagir com outras, fazer compras, consumir e criar conteúdo, até realizar transações financeiras, tudo isso de forma revolucionária, quebrando as barreiras do tempo, da geografia e do idioma.<br/><br/>
+                            Esses serviços são instantâneos e, muitas vezes, gratuitos. Mas, na Internet, quando o serviço é de graça, o produto é você. Quando você usa um serviço, você paga com a sua atenção, com os seus dados e, muitas vezes, de maneira oculta e invasora.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alora section -->
+        <div id="alora">
+            <div class="container">
+                <div class="title-section">
+                    <img draggable="false" src="assets/dec2.svg" alt=""/>
+                    <h3>Recupere sua privacidade</h3>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <p class="alora-info">
+                            Alora é o primeiro produto do time Privoce. O nosso objetivo é te devolver o controle sobre os seus dados e garantir sua privacidade na Internet.<br/>
+                            <span>/pra + você/</span><br/><br/>
+                            Alora é uma <span>interface de gerenciamento de dados pessoais</span> na Internet. Com Alora, você pode ter uma navegação segura, sem ter que se preocupar em apagar histórico, limpar cache e cookies. 
+                        </p>
+                        <div class="btn-get-extension">
+                            <a class="get-extension" href="https://chrome.google.com/webstore/detail/cookie-manager/pcmafklmeafeodgkklcoidiledfeicha">
+                                Usar Alora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div id="container-card" class="ml-auto">
+                            <!-- Extension preview -->
+                            <div class="card-extension">
+                                <div class="title-ext">
+                                    <img draggable="false" id="icon-alora" src="assets/icon-off.png" alt=""/>
+                                    <h3>Alora</h3>
+                                </div>
+                                <div class="body-ext">
+                                    <h4>Nunca rastreie meu histórico de navegação em</h4>
+                                    <div class="website">
+                                        <img draggable="false" class="icon-site" src="assets/site-icon.svg" alt="">
+                                        <p class="url-site">openprocessing.org</p>
+                                    </div>
+                                    <div class="toggle-div" style="cursor: pointer" onclick="toggle()">
+                                        <div id="toggler" class="toggler-off mx-auto">
+                                            <h5 id="txt-on">ON</h5>
+                                            <div id="toggler-button" class="toggler-button-off" ></div>
+                                            <h5 id="txt-off">OFF</h5>
+                                        </div>
+                                    </div>
+                                    <div class="info">
+                                        <img draggable="false" id="infoicon" src="assets/info.svg" alt="">
+                                        <p>Alora vai te ajudar a reduzir a quantidade de anúncios e a limpar o cache e os cookies relacionados a este site neste computador.</p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Section about our next steps -->
-        <div id="next-steps">
+        <!-- Section about Alora -->
+        <div id="about-alora">
             <div class="container">
                 <div class="title-section">
                     <img draggable="false" src="assets/dec3.svg" alt=""/>
-                    <h3>Nossos próximos passos</h3>
+                    <h3>O que Alora pode fazer?</h3>
                 </div>
-                <div class="next-content">
+                <div class="a-a-content">
                     <ul class="list">
                         <li class="marked">
-                            Extensão Alora que protege os dados pessoais e melhora a experiência de navegação.
+                            Gerenciar históricos de navegação dos sites selecionados<br/>
+                            (limpar cookies e caches)
                         </li>
                         <li class="marked">
-                            Portal pessoal Entro para gerencialmente de dados.
+                            Reduzir anúncios direcionados online
+                        </li>
+                        <li class="marked">
+                            Bloquear rastreadores nos sites acessados
                         </li>
                         <li class="not-marked">
-                            Navegador social com perfis de dados interoperáveis controlados pelos usuários.
-                        </li>
-                        <li class="not-marked">
-                            SO WebAssembly e framework para aplicativos web com nuvem pessoal.
+                            Página do portal pessoal <span>(Em breve!)</span>
                         </li>
                     </ul>
                 </div>
@@ -286,6 +262,44 @@
                         <div class="p-container">
                             <div class="person">
                                 <div class="photo"
+                                    style="background-image: url('./assets/people/andre.jpg');"
+                                ></div>
+                                <div class="p-description">
+                                    <div>
+                                        <p>
+                                            André Andrade é um estudante de Sistemas de Informação na UESB. Seus interesses são programação de computadores, diversidade e questões relacionadas a igualdade de gênero e automação residencial assistiva.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-info">
+                                <h3 style="font-weight: bolder;">André Andrade</h3>
+                                <h3>Engenheiro Frontend</h3>
+                            </div>
+                        </div>
+
+                        <div class="p-container">
+                            <div class="person">
+                                <div class="photo"
+                                    style="background-image: url('./assets/people/joao.jpg');"
+                                ></div>
+                                <div class="p-description">
+                                    <div>
+                                        <p>
+                                            João Andreotti é um estudante de Ciência da Computação da UESB. Seus interesses incluem programação competitiva, redes de computadores e segurança de computadores.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-info">
+                                <h3 style="font-weight: bolder;">João Andreotti</h3>
+                                <h3>Engenheiro Backend</h3>
+                            </div>
+                        </div>
+
+                        <div class="p-container">
+                            <div class="person">
+                                <div class="photo"
                                     style="background-image: url('./assets/people/victoria.jpg');"
                                 ></div>
                                 <div class="p-description">
@@ -298,7 +312,7 @@
                             </div>
                             <div class="p-info">
                                 <h3 style="font-weight: bolder;">Victória Trindade</h3>
-                                <h3>Líder de Marketing</h3><h3>Engenheira Frontend</h3>
+                                <h3>Líder de Marketing</h3>
                             </div>
                         </div>
 
@@ -317,108 +331,12 @@
                             </div>
                             <div class="p-info">
                                 <h3 style="font-weight: bolder;">Túlio Calil</h3>
-                                <h3>Líder de Engenharia</h3><h3>Engenheiro Fullstack</h3>
-                            </div>
-                        </div>
-
-                        <div class="p-container">
-                            <div class="person">
-                                <div class="photo"
-                                    style="background-image: url('./assets/people/andre.jpg');"
-                                ></div>
-                                <div class="p-description">
-                                    <div>
-                                        <p>
-                                            André Andrade é um estudante de Sistemas de Informação na UESB. Seus interesses são programação de computadores, diversidade e questões relacionadas a igualdade de gênero e automação residencial assistiva.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="p-info">
-                                <h3 style="font-weight: bolder;">André Andrade</h3>
-                                <h3>Assistente de Marketing</h3>
-                            </div>
-                        </div>
-
-                        <div class="p-container">
-                            <div class="person">
-                                <div class="photo"
-                                    style="background-image: url('./assets/people/ricardo.jpg');"
-                                ></div>
-                                <div class="p-description">
-                                    <div>
-                                        <p>
-                                            Ricardo Martinez é um estudante de Design e Comunicação Visual da Universidade Federal da Bahia, formado no bacharelado interdisciplinar em Artes pela mesma universidade.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="p-info">
-                                <h3 style="font-weight: bolder;">Ricardo Martinez</h3>
-                                <h3>Designer Gráfico</h3>
-                            </div>
-                        </div>
-
-                        <div class="p-container">
-                            <div class="person">
-                                <div class="photo"
-                                    style="background-image: url('./assets/people/wesley.jpg');"
-                                ></div>
-                                <div class="p-description">
-                                    <div>
-                                        <p>
-                                            Wesley Rebouças é um estudante de Engenharia da Computação da Universidade Salvador (UNIFACS), apreciador de como as tecnologias mudam o mundo.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="p-info">
-                                <h3 style="font-weight: bolder;">Wesley Rebouças</h3>
                                 <h3>Engenheiro Fullstack</h3>
                             </div>
                         </div>
 
-                        <div class="p-container">
-                            <div class="person">
-                                <div class="photo"
-                                    style="background-image: url('./assets/people/thiago.jpg');"
-                                ></div>
-                                <div class="p-description">
-                                    <div>
-                                        <p>
-                                            Thiago Moreira é um estudante do bacharelado interdisciplinar em Ciências e Tecnologia da Universidade Federal da Bahia.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="p-info">
-                                <h3 style="font-weight: bolder;">Thiago Moreira</h3>
-                                <h3>Engenheiro Frontend</h3>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
-
-                <h2 class="txt-team">
-                    Conheça as incríveis<br/>
-                    pessoas que fizeram parte<br/>
-                    do projeto
-                </h2>
-
-                <div class="people">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">João Andreotti</h5>
-                                    <p class="card-text">Engenheiro Backend</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
             </div>
         </div>
 
@@ -446,7 +364,6 @@
         <!-- Footer -->
         <div id="footer">
             <h2>O Projeto Privoce - 2020</h2>
-            <a href="privacyPolicy.html">Política de Privacidade</a>
         </div>
 
     </body>

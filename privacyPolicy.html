@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Privoce Project</title>
+        <link rel="icon" type="image/png" href="assets/favicon.png"/>
+        <meta charset="utf-8">
+        <meta content="width=device-width, user-scalable=no" name="viewport"/>
+        <meta name="description" content="Take ownership of your data, digital footprints, and social connections with Privoce products.">
+
+        <link href="lib/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="lib/jquery/jquery.min.js"></script>
+        <script src="lib/js/bootstrap.min.js"></script>
+
+        <link href="css/main.css" rel="stylesheet" type="text/css"/>
+        <script src="js/main.js"></script>
+        <style>
+            .c0 {
+                padding: 90px 90px;
+                width: 60%;
+            }
+
+            .c1 {
+                margin-top: 30px;
+                color: #000000 !important;
+                font-family: "Arial";
+                font-weight: 700;
+            }
+
+            .c2 {
+                margin-bottom: 3px;
+                color: #3d3d3d !important;
+                font-family: "Arial";
+            }
+
+            .c3 {
+                margin-bottom: 3px;
+                color: #3d3d3d !important;
+                font-family: "Arial";
+            }
+
+            @media screen and (max-width: 768px) {
+                .c0 {
+                    padding: 90px 30px;
+                    width: 100%;
+                }
+            }
+
+                @media screen and (min-width: 769px) and (max-width:992px) {
+                .c0 {
+                    padding: 90px 70px;
+                    width: 80%;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Fixed navbar -->
+        <div class="nav-container">
+            <nav class="navbar navbar-expand-lg menu">
+                <a class="navbar-brand" href="index.html" onclick="scrollToSection('header')">
+                    <div class="nav-brand menu-item">
+                        <img draggable="false" class="img-brand" src="assets/lock.svg" alt="lock">
+                        <h1 class="name-brand">Privoce</h1>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navDropdown" aria-controls="navDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg class="navbar-toggler-icon" fill-rule="evenodd"><path d="M24 18v1h-24v-1h24zm0-6v1h-24v-1h24zm0-6v1h-24v-1h24z" fill="#1040e2"/><path d="M24 19h-24v-1h24v1zm0-6h-24v-1h24v1zm0-6h-24v-1h24v1z"/></svg>
+                </button>
+                <div class="collapse navbar-collapse nav-links" id="navDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="dropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Nossos Produtos
+                                <svg width="10" height="10" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                <a class="dropdown-item menu-item" href="./#alora">Alora</a>
+                                <a class="dropdown-item menu-item" href="./#entro">Entro</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-item" href="./#mission">Missão</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-item" href="./#our-team">Time</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-item" href="./#join-us">Junte-se a nós</a>
+                        </li>
+                        <li class="nav-item dropdown mobile-flag-link">
+                            <a class="nav-link" href="#" id="dropdownFlags" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img draggable="false" class="flag" src="assets/flags/brazil.jpg" alt="BR"/>
+                                <svg class="no-desktop arrow-tip" width="10" height="10" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" fill="#6990F2"/></svg>
+                            </a>
+                            <div class="dropdown-menu flag-menu" aria-labelledby="dropdownFlags">
+                                <a class="dropdown-item flag-item" href="https://privoce.com">
+                                    <img draggable="false" class="flag" src="assets/flags/us.jpg" alt="US"/>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Privacy Policy -->
+        <div class="c0">
+                <h2 class="c1">Visão Geral da Privacidade</h2>
+                <p class="c2" style="font-style: italic;">Atualizado em 7 de setembro de 2020</p>
+
+                <p class="c2">Alora está empenhado em proteger sua privacidade e a segurança dos seus dados. Nosso objetivo é ajudá-lo a limpar o histórico de navegação com mais eficiência e protegê-lo de rastreadores de terceiros - todas as ações realizadas localmente.</p>
+
+                <p class="c2">Nós não temos um servidor e também não temos acesso a qualquer informação sua - tudo está armazenado localmente no seu próprio computador.</p>
+
+                <h2 class="c1">Quais informaões Alora coleta?</h2>
+                <p class="c2">Alora não coleta nenhuma informação: nós não temos um servidor.</p>
+
+                <h2 class="c1">Alora compartilha ou divulga minha informação?</h2>
+                <p class="c2">Não.</p>
+
+                <h2 class="c1">Contate-nos</h2>
+                <p class="c2">Entre em contato conosco pelo <a class="c3" href="mailto:hansu@mit.edu">hansu@mit.edu</a> se tiver qualquer pergunta.</p>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+            <h2>O Projeto Privoce - 2020</h2>
+            <a href="privacyPolicy.html">Política de Privacidade</a>
+        </div>
+    </body>
+</html>
