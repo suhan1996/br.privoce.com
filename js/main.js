@@ -3,7 +3,7 @@ window.onload = () => {
     let buttons = document.querySelectorAll('.get-extension');
 
     if (typeof InstallTrigger !== 'undefined') {
-        buttons[0].href = buttons[1].href = "https://addons.mozilla.org/firefox/addon/alora/";
+        buttons[0].href = "https://addons.mozilla.org/firefox/addon/alora/";
     }
 }
 
